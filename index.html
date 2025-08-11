@@ -2,34 +2,58 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semih - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semih TUNA - CV</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f2f5;
       color: #333;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+    .cv-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 1000px;
+      margin: 40px auto;
       background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    header {
+    .sidebar {
+      background-color: #1f2937;
+      color: #fff;
+      padding: 30px;
       text-align: center;
-      padding-bottom: 20px;
-      border-bottom: 2px solid #000;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
-    h2 {
-      color: #555;
-      margin-top: 40px;
+    .sidebar h1 {
+      margin: 10px 0;
+      font-size: 1.8em;
+    }
+    .sidebar p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+    .main {
+      padding: 30px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #1f2937;
     }
     ul {
       list-style: none;
@@ -38,70 +62,70 @@
     li {
       margin-bottom: 10px;
     }
-    .section {
-      margin-bottom: 30px;
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
+  <div class="cv-container">
+    <div class="sidebar">
+      <img src="./IMG/me.jpg" alt="Semih TUNA">
       <h1>Semih TUNA</h1>
-      <p>Bilgi İşlem Uzmanı | smh_tuna@hotmail.com | +90 555 242 75 60 | Marmara Ereğlisi / Tekirdağ</p>
-    </header>
+      <p>Bilgi İşlem Uzmanı</p>
+      <p>📧 smh_tuna@hotmail.com</p>
+      <p>📞 0 555 242 75 60</p>
+      <p>📍 Marmara Ereğlisi / TEKİRDAĞ</p>
+    </div>
 
-    <section class="section">
-      <h2>💼 Profesyonel Özet</h2>
-      <p>Detay odaklı, çözüm üretmeye odaklı bir IT uzmanı olarak Makronet, Vodafone ve Logo A.Ş. gibi firmalarla başarılı iş ilişkileri yürüttüm. Sistem yönetimi, teknik destek ve dijital dönüşüm konularında deneyimliyim.</p>
-    </section>
+    <div class="main">
+      <div class="section">
+        <h2>💼 Profesyonel Özet</h2>
+        <p>Detaylara önem veren, çözüm odaklı bir IT uzmanı olarak Makronet, Vodafone ve Logo A.Ş. gibi firmalarla başarılı iş ilişkileri yürüttüm. Sistem yönetimi, teknik destek ve dijital dönüşüm konularında deneyimliyim.</p>
+      </div>
 
-    <section class="section">
-      <h2>🧠 Yetenekler</h2>
-      <ul>
-        <li>IT sistemleri yönetimi</li>
-        <li>Teknik problem çözme</li>
-        <li>Yatırım analizi ve portföy yönetimi</li>
-        <li>Blockchain ve kripto varlıklar</li>
-        <li>Profesyonel iletişim ve organizasyon</li>
-        <li>Yapay Zeka çözümleri
-            <li>Full Stac Devoloper</li>
-        </li>
-      </ul>
-    </section>
+      <div class="section">
+        <h2>🧠 Yetenekler</h2>
+        <ul>
+          <li>IT sistemleri yönetimi</li>
+          <li>Teknik problem çözme</li>
+          <li>Yatırım analizi ve portföy yönetimi</li>
+          <li>Blockchain ve kripto varlıklar</li>
+          <li>Profesyonel iletişim ve organizasyon</li>
+        </ul>
+      </div>
 
-    <section class="section">
-      <h2>👨‍💼 İş Deneyimi</h2>
-      <ul>
-        <li><strong>Bilgi İşlem Uzmanı</strong> – Makronet (2022–Günümüz)</li>
-        <li><strong>IT Destek Uzmanı</strong> – Vodafone Partnerliği (2020–2022)</li>
-        <li><strong>Sistem Yöneticisi</strong> – Logo A.Ş. (2018–2020)</li>
-      </ul>
-    </section>
+      <div class="section">
+        <h2>👨‍💼 İş Deneyimi</h2>
+        <ul>
+          <li><strong>Bilgi İşlem Uzmanı</strong> – Makronet (2022–Günümüz)</li>
+          <li><strong>IT Destek Uzmanı</strong> – Vodafone Partnerliği (2020–2022)</li>
+          <li><strong>Sistem Yöneticisi</strong> – Logo A.Ş. (2018–2020)</li>
+        </ul>
+      </div>
 
-    <section class="section">
-      <h2>🎓 Eğitim</h2>
-      <ul>
-        <li><strong>Web Tasarım Ve Kodlama</strong> – Atatürk Üniversitesi, Mezuniyet: 2024/2026</li>
-      </ul>
-    </section>
+      <div class="section">
+        <h2>🎓 Eğitim</h2>
+        <ul>
+          <li><strong>Bilişim Sistemleri Lisans</strong> – [Üniversite Adı], Mezuniyet: 2017</li>
+        </ul>
+      </div>
 
-    <section class="section">
-      <h2>🌐 Diller</h2>
-      <ul>
-        <li>Türkçe – Ana dil</li>
-        <li>İngilizce – İleri seviye</li>
-      </ul>
-    </section>
+      <div class="section">
+        <h2>🌐 Diller</h2>
+        <ul>
+          <li>Türkçe – Ana dil</li>
+          <li>İngilizce – İleri seviye</li>
+        </ul>
+      </div>
 
-    <section class="section">
-      <h2>📌 İlgi Alanları</h2>
-      <ul>
-        <li>Doğa yürüyüşü ve kamp</li>
-        <li>Off-road sürüş</li>
-        <li>Yüksek büyüme potansiyelli hisseler</li>
-        <li>Yenilenebilir enerji ve yapay zeka trendleri</li>
-      </ul>
-    </section>
+      <div class="section">
+        <h2>📌 İlgi Alanları</h2>
+        <ul>
+          <li>Doğa yürüyüşü ve kamp</li>
+          <li>Off-road sürüş</li>
+          <li>Yüksek büyüme potansiyelli hisseler</li>
+          <li>Yenilenebilir enerji ve yapay zeka trendleri</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
